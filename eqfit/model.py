@@ -158,4 +158,5 @@ class fitter():
             ax.set_ylim(lims)
             ax.set_ylabel('Predicted')
             ax.set_xlabel('Actual')
+            plt.tight_layout()
             plt.show()
