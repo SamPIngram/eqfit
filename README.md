@@ -26,7 +26,7 @@ python demo.py
 ``` 
 If everything worked you should get the following figure output:
 
-![demofig](example/demofig.png)
+![demofig](https://github.com/SamPIngram/eqfit/blob/master/example/demofig.png?raw=true)
 
 ## Example
 
@@ -34,7 +34,7 @@ This example will cover the API to call eqfit on your data.
 It will utilise the [example dataset](https://github.com/SamPIngram/eqfit/blob/master/example/exampledata.csv) provided.
 In this example, there are five input parameters (A-E) and one test parameter (Y). 
 We want to figure out a suitable polynomial equation for predicting Y from the parameters A-E.
-The below is a heavily commented version of the [demo python script](https://github.com/SamPIngram/eqfit/blob/master/demo.) to explain how we do this.
+The below is a heavily commented version of the [demo python script](https://github.com/SamPIngram/eqfit/blob/master/demo.py) to explain how we do this.
 ```python
 import eqfit # import eqfit
 import pandas as pd # import pandas to load data
