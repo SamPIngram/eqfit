@@ -4,9 +4,14 @@ Note: this is an early evaluation of what such a package might look like. If you
 
 ## Installation
 
-eqfit is currently a toolset to allow for the quick and simple muti-parameter fitting with polynomial equations. To get started quickly follow these steps:
+eqfit can be installed using pip:
+```
+pip install eqfit
+```
 
-1. Clone or download this respository and launch python within the folder.
+To get started quickly from source follow these steps:
+
+1. Clone or download this repository and launch python within the folder.
 
 2. Make a python environment to run in. Always recommend the use of virtual environments for safety. Must be Python3 and currently only tested with Python 3.8
 
@@ -27,7 +32,7 @@ If everything worked you should get the following figure output:
 
 This example will cover the API to call eqfit on your data. 
 It will utilise the [example dataset](https://github.com/SamPIngram/eqfit/blob/master/example/exampledata.csv) provided.
-In this example there are five input parameters (A-E) and one test paramter (Y). 
+In this example, there are five input parameters (A-E) and one test parameter (Y). 
 We want to figure out a suitable polynomial equation for predicting Y from the parameters A-E.
 The below is a heavily commented version of the [demo python script](https://github.com/SamPIngram/eqfit/blob/master/demo.) to explain how we do this.
 ```python
@@ -55,7 +60,7 @@ eq.make_equation(param_notation=['A', 'B', 'C', 'D', 'E'], coef_cutoff=100)
 eq.evaluate_equation()
 ```
 
-This covers the various functions included. For further details on each function please refer to the docstring by  calling the help function. For example:
+This covers the various functions included. For further details on each function please refer to the docstring by calling the help function. For example:
  ```
  help(eq.do_polyfit)
  ```
