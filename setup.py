@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="eqfit",
-    version="0.0.1",
+    version="0.0.3",
     author="Sam Ingram",
     author_email="sp_ingram12@yahoo.co.uk",
     description="Equation fitting automation made simple with python",

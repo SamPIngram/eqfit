@@ -138,8 +138,8 @@ class fitter():
         print(f'Evaluating: {self.equation}')
         predictions = []
         for i, row in self.X.iterrows():
-            for param in self.param_notation:
-                globals()[param] = row[param]
+            for param, col in zip(self.param_notation, self.X.columns):
+                globals()[param] = row[col]
             predictions.append(eval(self.equation))
         RMSE=np.sqrt(np.sum(np.square(predictions-self.Y)))
         print(f'RMSE: {round(RMSE,5)}')
